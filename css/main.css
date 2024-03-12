@@ -1,0 +1,876 @@
+body {
+  margin: 0;
+  font-family: Lexend, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  background-color: var(--grey-10); }
+
+:root {
+  --font-family: "Lexend", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --absolute-white: #fff;
+  --absolute-black: #000;
+  --green-10: #22251b;
+  --green-60: #caff33;
+  --green-65: #d1ff4d;
+  --green-70: #d8ff66;
+  --green-80: #e5ff99;
+  --green-90: #f2ffcc;
+  --green-95: #f8ffe5;
+  --green-97: #fbfff0;
+  --green-99: #fefffa;
+  --white-90: #e4e4e7;
+  --white-95: #f1f1f3;
+  --white-97: #f7f7f8;
+  --white-99: #fcfcfd;
+  --grey-10: #1a1a1a;
+  --grey-11: #1c1c1c;
+  --grey-15: #262626;
+  --grey-20: #333;
+  --grey-30: #4c4c4d;
+  --grey-35: #59595a;
+  --grey-40: #656567;
+  --grey-60: #98989a;
+  --grey-70: #b3b3b3;
+  --grey-75: #bfbfbf; }
+
+section {
+  background-color: var(--black-08); }
+
+@media screen and (min-width: 390px) {
+  main {
+    min-width: 390px;
+    margin: auto; } }
+@media screen and (min-width: 1440px) {
+  main {
+    min-width: 1440px; } }
+@media screen and (min-width: 1920px) {
+  main {
+    min-width: 1920px; } }
+
+p {
+  margin: 0; }
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  font-style: normal; }
+
+address {
+  text-decoration: none;
+  font-style: normal; }
+
+li {
+  text-decoration: none;
+  list-style-type: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
+button {
+  padding: 0; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; }
+
+@keyframes shake3856 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0); }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px); }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px); }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box; }
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  tab-size: 4;
+  /* 3 */ }
+
+/*
+Sections
+========
+*/
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */ }
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted; }
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%; }
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */ }
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none; }
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; }
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none; }
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0; }
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline; }
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item; }
+
+.header {
+  max-width: 390px;
+  margin: auto;
+  padding: 40px 16px;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #1a1a1a 70%), url(/images/header-abstract.svg); }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 14px 14px 24px;
+    border-radius: 100px;
+    border: 1px solid var(--grey-15);
+    background-color: var(--grey-11); }
+  .header__nav-logo {
+    display: flex;
+    align-items: center; }
+  .header__nav-btn-mobile {
+    cursor: pointer;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 82px;
+    background-color: var(--green-60); }
+
+.hero {
+  max-width: 390px;
+  margin: auto;
+  padding: 10px 16px 60px 16px; }
+  .hero__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .hero__title-check {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 16px 8px 8px;
+    border-radius: 61px;
+    background-color: var(--grey-15);
+    margin-bottom: 12px; }
+  .hero__title-check-text {
+    color: var(--absolute-white);
+    font-size: 12px;
+    line-height: 24px; }
+  .hero__title-text {
+    color: var(--absolute-white);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 8px; }
+  .hero__title-description {
+    color: var(--white-90);
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 30px; }
+  .hero__title-btn {
+    cursor: pointer;
+    color: var(--grey-11);
+    font-weight: 400;
+    line-height: 150%;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 82px;
+    background-color: var(--green-60); }
+  .hero__money-border {
+    margin: 0 26px;
+    margin-top: 80px;
+    padding: 1px;
+    border-radius: 6px;
+    border: 0.51px solid var(--grey-15);
+    background-image: linear-gradient(226deg, rgba(202, 255, 51, 0.2) 10%, #262626 15%, #262626 80%, rgba(202, 255, 51, 0.2) 100%); }
+  .hero__money {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    background-color: var(--grey-10);
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
+  .hero__money-transaction {
+    position: relative;
+    height: 133px; }
+  .hero__money-transaction-text {
+    margin-bottom: 10px; }
+  .hero__money-transaction-text, .hero__money-exchange-text {
+    color: var(--absolute-white);
+    font-size: 10.26px;
+    font-weight: 500;
+    line-height: 150%; }
+  .hero__money-transaction-card {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    width: 264px;
+    top: 27px;
+    left: 0;
+    justify-content: space-between;
+    align-items: end;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: var(--grey-11);
+    border: 0.51px solid var(--grey-15); }
+  .hero__money-transaction-card-new, .hero__money-transaction-card-new1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: var(--grey-11);
+    border: 0.51px solid var(--grey-15); }
+  .hero__money-transaction-card-new {
+    position: absolute;
+    width: 244px;
+    top: 58px;
+    left: 10px;
+    z-index: 1; }
+  .hero__money-transaction-card-new1 {
+    position: absolute;
+    width: 224px;
+    top: 89px;
+    left: 20px;
+    z-index: 0; }
+  .hero__money-transaction-title {
+    display: flex;
+    align-items: center;
+    gap: 5px; }
+  .hero__money-transaction-img-box {
+    background-color: var(--green-60);
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 27px; }
+  .hero__money-transaction-name {
+    color: var(--absolute-white);
+    font-size: 9px;
+    line-height: 150%; }
+  .hero__money-transaction-client {
+    color: var(--absolute-white);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 150%; }
+  .hero__money-transaction-sum {
+    color: var(--absolute-white);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 150%; }
+  .hero__money-exchange-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    border-radius: 6px;
+    border: 0.51px solid var(--grey-15);
+    background-color: var(--grey-11); }
+  .hero__money-exchange-country {
+    padding: 10px;
+    width: 130px;
+    border-bottom: 0.51px solid var(--grey-15);
+    border-right: 0.51px solid var(--grey-15); }
+  .hero__money-exchange-country:nth-child(2) {
+    border-right: 0; }
+  .hero__money-exchange-country-flag {
+    display: flex;
+    align-items: center;
+    color: var(--absolute-white);
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 150%; }
+  .hero__money-exchange-country-img {
+    margin-right: 5px; }
+  .hero__money-exchange-country-text {
+    color: var(--white-90);
+    font-size: 8px;
+    line-height: 150%;
+    margin-top: 5px; }
+  .hero__money-exchange-num {
+    width: 130px;
+    color: var(--absolute-white);
+    padding: 15px 10px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 150%;
+    border-right: 0.51px solid var(--grey-15); }
+  .hero__money-exchange-num:last-child {
+    border-right: 0; }
+  .hero__money-btn {
+    cursor: pointer;
+    color: var(--green-65);
+    font-size: 9.23px;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 42px;
+    background-color: var(--green-10); }
+  .hero__money-income {
+    position: absolute;
+    top: -25px;
+    left: -36px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: var(--green-10); }
+  .hero__money-img-box {
+    background-color: var(--green-60);
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 27px; }
+  .hero__money-message-sum {
+    color: var(--absolute-white);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 150%; }
+  .hero__money-message-days {
+    color: var(--white-90);
+    font-size: 8px;
+    font-weight: 300;
+    line-height: 150%; }
+  .hero__money-arrowbg {
+    position: absolute;
+    z-index: -1;
+    width: 220px;
+    height: 201px;
+    top: -19px;
+    right: -47px;
+    background-image: url(/images/arrows-bg.svg);
+    background-size: cover; }
+  .hero__money-currency {
+    position: absolute;
+    bottom: -52px;
+    right: -30px;
+    padding: 5px 5px 5px 11px;
+    display: flex;
+    align-items: center;
+    border-radius: 41px;
+    background-color: var(--green-10); }
+  .hero__money-currency-text {
+    color: var(--absolute-white);
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 150%; }
+  .hero__money-currency-country {
+    display: flex;
+    gap: 4px;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 28px;
+    border: 0.51px solid var(--grey-15);
+    background-color: var(--grey-10); }
+
+.footer {
+  max-width: 390px;
+  margin: auto;
+  padding: 50px 16px 30px 16px;
+  background-color: var(--grey-11); }
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--grey-15); }
+  .footer__nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px; }
+  .footer__nav-list {
+    display: flex;
+    gap: 14px; }
+  .footer__nav-link {
+    color: var(--white-90);
+    font-weight: 400;
+    line-height: 150%; }
+  .footer__contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    gap: 20px;
+    border-bottom: 1px solid var(--grey-15); }
+  .footer__contacts-item {
+    display: flex;
+    align-items: center; }
+  .footer__contacts-icon {
+    margin-right: 7px; }
+  .footer__contacts-link {
+    color: var(--white-90);
+    font-weight: 400;
+    line-height: 150%; }
+  .footer__end {
+    position: relative;
+    padding: 50px 24px 30px 24px;
+    margin-top: 50px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--grey-10);
+    border-radius: 12px;
+    border: 1px solid var(--grey-15); }
+  .footer__end-rights {
+    color: var(--grey-70);
+    line-height: 150%; }
+  .footer__end-link {
+    color: var(--grey-70);
+    line-height: 150%; }
+  .footer__end-link:first-child {
+    padding-right: 7px;
+    border-right: 1px solid var(--grey-70); }
+  .footer__end-link:last-child {
+    padding-left: 2px; }
+  .footer__socials {
+    position: absolute;
+    top: -20px;
+    display: flex;
+    gap: 8px; }
+  .footer__socials-btn {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 100px;
+    background-color: var(--green-60);
+    border: none; }
+
+.products {
+  max-width: 390px;
+  margin: auto;
+  padding: 60px 16px 40px 16px; }
+  .products__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .products__title-text {
+    color: var(--absolute-white);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 150%; }
+  .products__title-text-green {
+    color: var(--green-60); }
+  .products__title-description {
+    margin-top: 10px;
+    color: var(--grey-70);
+    line-height: 150%;
+    text-align: center; }
+  .products__title-btns {
+    display: flex;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 82px;
+    border: 1px solid var(--grey-15);
+    background-color: var(--grey-11); }
+  .products__title-btn-individuals {
+    cursor: pointer;
+    padding: 10px 18px 10px 18px;
+    border-radius: 140px;
+    border: none;
+    background-color: var(--green-60);
+    color: var(--grey-11);
+    font-weight: 400;
+    line-height: 150%; }
+  .products__title-btn-businesses {
+    cursor: pointer;
+    padding: 10px 18px 10px 18px;
+    border-radius: 140px;
+    border: none;
+    background-color: var(--grey-11);
+    color: var(--absolute-white);
+    font-weight: 400;
+    line-height: 150%; }
+  .products__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-top: 60px; }
+  .products__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid var(--grey-15); }
+  .products__card:first-child {
+    padding-top: 0; }
+  .products__card:last-child {
+    padding-bottom: 0;
+    border-bottom: 0; }
+  .products__card-container-icon {
+    margin-bottom: 20px;
+    width: 72px;
+    height: 72px;
+    padding: 8px;
+    border-radius: 70px;
+    background-image: linear-gradient(180deg, rgba(202, 255, 51, 0.05), rgba(202, 255, 51, 0) 100%); }
+  .products__card-container-icon-inner {
+    width: 56px;
+    height: 56px;
+    padding: 14px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg, rgba(202, 255, 51, 0.1) -66.216%, rgba(202, 255, 51, 0) 85.461%); }
+  .products__card-title {
+    margin-bottom: 12px;
+    color: var(--absolute-white);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%; }
+  .products__card-description {
+    color: var(--grey-70);
+    line-height: 150%;
+    text-align: center; }
+
+.cases {
+  max-width: 390px;
+  margin: auto;
+  padding: 40px 16px; }
+  .cases__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .cases__title-text {
+    color: var(--green-60);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 150%; }
+  .cases__title-description {
+    margin-top: 10px;
+    color: var(--grey-70);
+    line-height: 150%;
+    text-align: center; }
+  .cases__individuals-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: var(--grey-11);
+    background-image: url(/images/poitns-bg.svg);
+    background-repeat: no-repeat; }
+  .cases__individuals-item {
+    width: 154px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 14px;
+    border-radius: 12px;
+    background-color: var(--grey-10);
+    border: 1px solid var(--grey-15); }
+  .cases__individuals-container-icon {
+    margin-bottom: 14px;
+    width: 64px;
+    height: 64px;
+    padding: 8px;
+    border-radius: 70px;
+    background-image: linear-gradient(180deg, rgba(202, 255, 51, 0.05), rgba(202, 255, 51, 0) 100%); }
+  .cases__individuals-container-icon-inner {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg, rgba(202, 255, 51, 0.1) -66.216%, rgba(202, 255, 51, 0) 85.461%); }
+  .cases__individuals-text {
+    color: var(--absolute-white);
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center; }
+  .cases__individuals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; }
+  .cases__individuals-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .cases__individuals-title-text {
+    color: var(--absolute-white);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%; }
+  .cases__individuals-title-description {
+    margin-top: 10px;
+    color: var(--grey-70);
+    line-height: 150%;
+    text-align: center; }
+  .cases__individuals-percent-list {
+    padding: 0 50px; }
+  .cases__individuals-percent-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 3px dashed var(--grey-15); }
+  .cases__individuals-percent-item:first-child {
+    padding-top: 0; }
+  .cases__individuals-percent-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0; }
+  .cases__individuals-percent-num {
+    color: var(--green-60);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 2px; }
+  .cases__individuals-percent-text {
+    color: var(--grey-70);
+    line-height: 150%; }
+  .cases__individuals-btn {
+    cursor: pointer;
+    padding: 14px 20px;
+    border-radius: 82px;
+    background-color: var(--grey-11);
+    border: 1px solid var(--grey-15);
+    color: var(--absolute-white);
+    font-weight: 400;
+    line-height: 150%; }
+
+/*# sourceMappingURL=main.css.map */

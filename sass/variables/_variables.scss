@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Lexend, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    background-color: var(--grey-10);
+}
+:root {
+    --font-family: "Lexend", sans-serif;
+    --second-family: "Inter", sans-serif;
+
+--absolute-white: #fff;
+--absolute-black: #000;
+--green-10: #22251b;
+--green-60: #caff33;
+--green-65: #d1ff4d;
+--green-70: #d8ff66;
+--green-80: #e5ff99;
+--green-90: #f2ffcc;
+--green-95: #f8ffe5;
+--green-97: #fbfff0;
+--green-99: #fefffa;
+--white-90: #e4e4e7;
+--white-95: #f1f1f3;
+--white-97: #f7f7f8;
+--white-99: #fcfcfd;
+--grey-10: #1a1a1a;
+--grey-11: #1c1c1c;
+--grey-15: #262626;
+--grey-20: #333;
+--grey-30: #4c4c4d;
+--grey-35: #59595a;
+--grey-40: #656567;
+--grey-60: #98989a;
+--grey-70: #b3b3b3;
+--grey-75: #bfbfbf;
+}
+section {
+    background-color: var(--black-08);
+
+}
+main {
+
+    @media screen and (min-width: 390px) {
+        min-width: 390px;
+        margin: auto;
+    }
+    @media screen and (min-width: 1440px) {
+        min-width: 1440px;    
+    }
+    @media  screen and (min-width: 1920px) {
+        min-width: 1920px;        
+    }
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    font-style: normal;
+}
+
+address {
+    text-decoration: none;
+    font-style: normal;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+button {
+    padding: 0;
+}
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@keyframes shake3856 {
+    0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    }
+    20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+    }   
+    40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+    }   
+    60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+    }   
+    80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+    }   
+    100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    }
+}

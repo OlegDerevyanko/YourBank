@@ -1,0 +1,89 @@
+.footer {
+    max-width: 390px;
+    margin: auto;
+    padding: 50px 16px 30px 16px;
+    background-color: var(--grey-11);    
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--grey-15);
+    }
+    &__nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 6px;        
+    }
+    &__nav-list {
+        display: flex;
+        gap: 14px;
+    }
+    &__nav-link {
+        color: var(--white-90);
+        font-weight: 400;
+        line-height: 150%;
+    }
+    &__contacts {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 30px 0;
+        gap: 20px;
+        border-bottom: 1px solid var(--grey-15);
+    }
+    &__contacts-item {
+        display: flex;
+        align-items: center;
+    }
+    &__contacts-icon {
+        margin-right: 7px;
+    }
+    &__contacts-link {
+        color: var(--white-90);
+        font-weight: 400;
+        line-height: 150%;
+    }
+    &__end {
+        position: relative;
+        padding: 50px 24px 30px 24px;
+        margin-top: 50px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--grey-10);
+        border-radius: 12px;
+        border: 1px solid var(--grey-15);
+    }
+    &__end-rights {
+        color: var(--grey-70);
+        line-height: 150%;
+    }
+    &__end-link {
+        color: var(--grey-70);
+        line-height: 150%;
+    }
+    &__end-link:first-child {
+        padding-right: 7px;
+        border-right: 1px solid var(--grey-70);
+    }
+    &__end-link:last-child {
+        padding-left: 2px;
+    }
+    &__socials {
+        position: absolute;
+        top: -20px;
+        display: flex;
+        gap: 8px;
+    }
+    &__socials-btn {
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+        border-radius: 100px;
+        background-color: var(--green-60);
+        border: none;
+    }
+}

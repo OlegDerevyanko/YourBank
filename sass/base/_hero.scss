@@ -1,0 +1,276 @@
+.hero {
+    max-width: 390px;
+    margin: auto;
+    padding: 10px 16px 60px 16px;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title-check {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 8px 16px 8px 8px;
+        border-radius: 61px;
+        background-color: var(--grey-15);
+        margin-bottom: 12px;
+    }
+    &__title-check-text {
+        color: var(--absolute-white);
+        font-size: 12px;
+        line-height: 24px;
+    }
+    &__title-text {
+        color: var(--absolute-white);
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    &__title-description {
+        color: var(--white-90);
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__title-btn {
+        cursor: pointer;
+        color: var(--grey-11);
+        font-weight: 400;
+        line-height: 150%;
+        padding: 14px 24px;
+        border: none;
+        border-radius: 82px;
+        background-color: var(--green-60);
+    }
+    &__money-border {
+        margin: 0 26px;
+        margin-top: 80px;
+        padding: 1px;
+        border-radius: 6px;
+        border: 0.51px solid var(--grey-15);
+        background-image:linear-gradient(226deg,rgba(202,255,51,0.2) 10%,
+        rgb(38,38,38) 15%, rgb(38,38,38) 80%, rgba(202,255,51,0.2) 100%);        
+    }
+    &__money {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: 6px;
+        background-color: var(--grey-10);
+        // background-image: linear-gradient(225.58deg, rgba(26, 26, 26, 0) 0.002%,rgb(26, 26, 26) 39.719%);
+        // background-image: url(/images/money-bg.png);
+        background-size: cover;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__money-transaction {
+        position: relative;
+        height: 133px;
+    }
+    &__money-transaction-text {
+        margin-bottom: 10px;
+    }
+    &__money-transaction-text, &__money-exchange-text {
+        color: var(--absolute-white);
+        font-size: 10.26px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+    &__money-transaction-card {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        width: 264px;
+        top: 27px;
+        left: 0;
+        justify-content: space-between;
+        align-items: end;
+        padding: 8px 12px;
+        border-radius: 6px;
+        background-color: var(--grey-11);
+        border: 0.51px solid var(--grey-15);
+    }
+    &__money-transaction-card-new, &__money-transaction-card-new1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 8px 12px;
+        border-radius: 6px;
+        background-color: var(--grey-11);
+        border: 0.51px solid var(--grey-15);
+    }
+    &__money-transaction-card-new {
+        position: absolute;
+        width: 244px;
+        top: 58px;
+        left: 10px;
+        z-index: 1;
+    }
+    &__money-transaction-card-new1 {
+        position: absolute;
+        width: 224px;
+        top: 89px;
+        left: 20px;
+        z-index: 0;
+    }
+    &__money-transaction-title {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    &__money-transaction-img-box {
+        background-color: var(--green-60);
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 27px;
+    }
+    &__money-transaction-name {
+        color: var(--absolute-white);
+        font-size: 9px;
+        line-height: 150%;
+    }
+    &__money-transaction-client {
+        color: var(--absolute-white);
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 150%;
+    }    
+    &__money-transaction-sum {
+        color: var(--absolute-white);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+    &__money-exchange-box {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        border-radius: 6px;
+        border: 0.51px solid var(--grey-15);
+        background-color: var(--grey-11);
+    }
+    &__money-exchange-country {
+        padding: 10px;
+        width: 130px;
+        border-bottom: 0.51px solid var(--grey-15);
+        border-right: 0.51px solid var(--grey-15);
+    }
+    &__money-exchange-country:nth-child(2) {
+        border-right: 0;
+    }
+    &__money-exchange-country-flag {
+        display: flex;
+        align-items: center;
+        color: var(--absolute-white);
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    &__money-exchange-country-img {
+        margin-right: 5px;
+    }
+    &__money-exchange-country-text {
+        color: var(--white-90);
+        font-size: 8px;
+        line-height: 150%;
+        margin-top: 5px;
+    }
+    &__money-exchange-num {
+        width: 130px;
+        color: var(--absolute-white);
+        padding: 15px 10px;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 150%;
+        border-right: 0.51px solid var(--grey-15);
+    }
+    &__money-exchange-num:last-child {
+        border-right :0 ;
+    }
+    &__money-btn {
+        cursor: pointer;
+        color: var(--green-65);
+        font-size: 9.23px;
+        font-weight: 400;
+        line-height: 150%;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 42px;
+        background-color: var(--green-10);
+    }
+    &__money-income {
+        position: absolute;
+        top: -25px;
+        left: -36px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 8px 10px;
+        border-radius: 6px;
+        background-color: var(--green-10);
+    }
+    &__money-img-box {
+        background-color: var(--green-60);
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 27px;
+    }
+    &__money-message-sum {
+        color: var(--absolute-white);
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    &__money-message-days {
+        color: var(--white-90);
+        font-size: 8px;
+        font-weight: 300;
+        line-height: 150%;
+    }
+    &__money-arrowbg {
+        position: absolute;
+        z-index: -1;
+        width: 220px;
+        height: 201px;
+        top: -19px;
+        right: -47px;
+        background-image: url(/images/arrows-bg.svg);
+        background-size: cover;
+    }
+    &__money-currency {
+        position: absolute;
+        bottom: -52px;
+        right: -30px;
+        padding: 5px 5px 5px 11px;
+        display: flex;
+        align-items: center;
+        border-radius: 41px;
+        background-color: var(--green-10);
+    }
+    &__money-currency-text {
+        color: var(--absolute-white);
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    &__money-currency-country {
+        display: flex;
+        gap: 4px;
+        padding: 5px;
+        margin-left: 10px;
+        border-radius: 28px;
+        border: 0.51px solid var(--grey-15);
+        background-color: var(--grey-10);
+    }
+}
