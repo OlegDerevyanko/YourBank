@@ -2,7 +2,15 @@
     max-width: 390px;
     margin: auto;
     padding: 50px 16px 30px 16px;
-    background-color: var(--grey-11);    
+    background-color: var(--grey-11);  
+    @media screen and (min-width: 1440px) {
+        min-width: 1440px;
+        padding: 60px 80px 30px 80px;
+    }  
+    @media screen and (min-width: 1920px) {
+        min-width: 1920px;
+        padding: 100px 162px 50px 162px;
+    }  
     &__nav {
         display: flex;
         flex-direction: column;
@@ -10,20 +18,52 @@
         gap: 30px;
         padding-bottom: 30px;
         border-bottom: 1px solid var(--grey-15);
+        @media screen and (min-width: 1440px) {
+            gap: 40px;
+            padding-bottom: 40px;
+        }
+        @media screen and (min-width: 1920px) {
+            gap: 50px;
+            padding-bottom: 50px;
+        }  
     }
     &__nav-logo {
         display: flex;
         align-items: center;
-        gap: 6px;        
+        gap: 6px;  
+        @media screen and (min-width: 1920px) {
+            gap: 7px;  
+        }      
+    }
+    &__nav-logo-icon {
+        @media screen and (min-width: 1920px) {
+            width: 33px;
+            height: 33px;            
+        }  
+    }
+    &__nav-name-icon {
+        @media screen and (min-width: 1920px) {
+            width: 112px;
+            height: 18px;
+        }  
     }
     &__nav-list {
         display: flex;
         gap: 14px;
+        @media screen and (min-width: 1920px) {
+            gap: 26px;  
+        }  
     }
     &__nav-link {
         color: var(--white-90);
         font-weight: 400;
         line-height: 150%;
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+        }  
     }
     &__contacts {
         display: flex;
@@ -32,6 +72,12 @@
         padding: 30px 0;
         gap: 20px;
         border-bottom: 1px solid var(--grey-15);
+        @media screen and (min-width: 1440px) {
+            padding: 40px 0;
+        }
+        @media screen and (min-width: 1920px) {
+            padding: 50px 0;
+        }  
     }
     &__contacts-item {
         display: flex;
@@ -44,26 +90,50 @@
         color: var(--white-90);
         font-weight: 400;
         line-height: 150%;
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+        } 
     }
     &__end {
         position: relative;
-        padding: 50px 24px 30px 24px;
-        margin-top: 50px;
-        gap: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 50px 24px 30px 24px;
+        margin-top: 50px;
+        gap: 20px;
         background-color: var(--grey-10);
         border-radius: 12px;
         border: 1px solid var(--grey-15);
+        @media screen and (min-width: 1440px) {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 12px 24px 12px 12px;
+            margin-top: 40px;
+            gap: 0;
+            border-radius: 100px;
+        }
+        @media screen and (min-width: 1920px) {
+            padding: 16px 30px 16px 16px;
+            margin-top: 50px;
+        } 
     }
     &__end-rights {
         color: var(--grey-70);
         line-height: 150%;
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+        } 
     }
     &__end-link {
         color: var(--grey-70);
         line-height: 150%;
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+        } 
     }
     &__end-link:first-child {
         padding-right: 7px;
@@ -77,6 +147,12 @@
         top: -20px;
         display: flex;
         gap: 8px;
+        @media screen and (min-width: 1440px) {
+            position:unset;        
+        }
+        @media screen and (min-width: 1920px) {
+            gap: 14px;
+        } 
     }
     &__socials-btn {
         width: 44px;
@@ -85,5 +161,10 @@
         border-radius: 100px;
         background-color: var(--green-60);
         border: none;
+        @media screen and (min-width: 1920px) {
+            width: 52px;
+            height: 52px;
+            padding: 14px;
+        }
     }
 }

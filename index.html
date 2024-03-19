@@ -19,6 +19,24 @@
                     <use href="./images/icons.svg#icon-yourbank"></use>
                 </svg>
             </div>
+            <ul class="header__nav-list">
+                <li class="header__nav-item current">
+                    <a class="header__nav-link " href="">Home</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="">Careers</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="">About</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="">Security</a>
+                </li>
+            </ul>
+            <div class="header__btns">
+                <button class="header__btn-signup">Sign Up</button>
+                <button class="header__btn-login">Login</button>
+            </div>
             <button class="header__nav-btn-mobile">
                 <svg class="header__nav-btn-mobile-img" width="28px" height="28px" aria-hidden="true">
                     <use href="./images/icons.svg#icon-mobile-menu"></use>
@@ -149,8 +167,10 @@
         </section>
         <section class="products">
             <div class="products__title">
-                <h2 class="products__title-text">Our <span class="products__title-text-green">Products</span></h2>
-                <p class="products__title-description">Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations</p>
+                <div>
+                    <h2 class="products__title-text">Our <span class="products__title-text-green">Products</span></h2>
+                    <p class="products__title-description">Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations</p>
+                </div>
                 <div class="products__title-btns">
                     <button class="products__title-btn-individuals">For Individuals</button>
                     <button class="products__title-btn-businesses">For Businesses</button>
@@ -197,68 +217,336 @@
                 <h2 class="cases__title-text">Use Cases</h2>
                 <p class="cases__title-description">At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions</p>                              
             </div>
-            <ul class="cases__individuals-list">
-                <li class="cases__individuals-item">
-                    <div class="cases__individuals-container-icon">
-                        <div class="cases__individuals-container-icon-inner">
-                            <svg class="cases__individuals-icon" width="24px" height="24px" aria-hidden="true">
-                                <use href="./images/icons.svg#icon-hand-lamp"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <p class="cases__individuals-text">Managing Personal Finances</p>
-                </li>
-                <li class="cases__individuals-item">
-                    <div class="cases__individuals-container-icon">
-                        <div class="cases__individuals-container-icon-inner">
-                            <svg class="cases__individuals-icon" width="24px" height="24px" aria-hidden="true">
-                                <use href="./images/icons.svg#icon-hand"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <p class="cases__individuals-text">Saving for the Future</p>
-                </li>
-                <li class="cases__individuals-item">
-                    <div class="cases__individuals-container-icon">
-                        <div class="cases__individuals-container-icon-inner">
-                            <svg class="cases__individuals-icon" width="24px" height="24px" aria-hidden="true">
-                                <use href="./images/icons.svg#icon-building"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <p class="cases__individuals-text">Homeownership</p>
-                </li>
-                <li class="cases__individuals-item">
-                    <div class="cases__individuals-container-icon">
-                        <div class="cases__individuals-container-icon-inner">
-                            <svg class="cases__individuals-icon" width="28px" height="28px" aria-hidden="true">
-                                <use href="./images/icons.svg#icon-book"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <p class="cases__individuals-text">Education Funding</p>
-                </li>
-            </ul>
             <div class="cases__individuals">
-                <div class="cases__individuals-title">
-                    <h2 class="cases__individuals-title-text">For Individuals</h2>
-                    <p class="cases__individuals-title-description">For individuals, our mortgage services pave the way to homeownership, and our flexible personal loans provide vital support during various life milestones. We also prioritize retirement planning, ensuring a financially secure future for our customers</p>                              
-                </div>
-                <ul class="cases__individuals-percent-list">
-                    <li class="cases__individuals-percent-item">
-                        <span class="cases__individuals-percent-num">78%</span>
-                        <p class="cases__individuals-percent-text">Secure Retirement Planning</p>
+                <ul class="cases__individuals-list">
+                    <li class="cases__individuals-item">
+                        <div class="cases__individuals-container-icon">
+                            <div class="cases__individuals-container-icon-inner">
+                                <svg class="cases__individuals-icon" width="24px" height="24px" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-hand-lamp"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="cases__individuals-text">Managing Personal Finances</p>
                     </li>
-                    <li class="cases__individuals-percent-item">
-                        <span class="cases__individuals-percent-num">63%</span>
-                        <p class="cases__individuals-percent-text">Manageable Debt Consolidation</p>
+                    <li class="cases__individuals-item">
+                        <div class="cases__individuals-container-icon">
+                            <div class="cases__individuals-container-icon-inner">
+                                <svg class="cases__individuals-icon" width="24px" height="24px" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-hand"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="cases__individuals-text">Saving for the Future</p>
                     </li>
-                    <li class="cases__individuals-percent-item">
-                        <span class="cases__individuals-percent-num">91%</span>
-                        <p class="cases__individuals-percent-text">Reducing financial burdens</p>
+                    <li class="cases__individuals-item">
+                        <div class="cases__individuals-container-icon">
+                            <div class="cases__individuals-container-icon-inner">
+                                <svg class="cases__individuals-icon" width="24px" height="24px" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-building"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="cases__individuals-text">Homeownership</p>
+                    </li>
+                    <li class="cases__individuals-item">
+                        <div class="cases__individuals-container-icon">
+                            <div class="cases__individuals-container-icon-inner">
+                                <svg class="cases__individuals-icon" width="28px" height="28px" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-book"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="cases__individuals-text">Education Funding</p>
                     </li>
                 </ul>
-                <button class="cases__individuals-btn">Learn More</button>
+                <div class="cases__individuals-box">
+                    <div class="cases__individuals-title">
+                        <h2 class="cases__individuals-title-text">For Individuals</h2>
+                        <p class="cases__individuals-title-description">For individuals, our mortgage services pave the way to homeownership, and our flexible personal loans provide vital support during various life milestones. We also prioritize retirement planning, ensuring a financially secure future for our customers</p>                              
+                    </div>
+                    <ul class="cases__individuals-percent-list">
+                        <li class="cases__individuals-percent-item">
+                            <span class="cases__individuals-percent-num">78%</span>
+                            <p class="cases__individuals-percent-text">Secure Retirement Planning</p>
+                        </li>
+                        <li class="cases__individuals-percent-item">
+                            <span class="cases__individuals-percent-num">63%</span>
+                            <p class="cases__individuals-percent-text">Manageable Debt Consolidation</p>
+                        </li>
+                        <li class="cases__individuals-percent-item">
+                            <span class="cases__individuals-percent-num">91%</span>
+                            <p class="cases__individuals-percent-text">Reducing financial burdens</p>
+                        </li>
+                    </ul>
+                    <button class="cases__individuals-btn">Learn More</button>
+                </div>
+            </div>
+            <div class="cases__bussines">
+                <ul class="cases__bussines-list">
+                    <li class="cases__bussines-item">
+                        <div class="cases__bussines-container-icon">
+                            <div class="cases__bussines-container-icon-inner">
+                                <svg class="cases__bussines-icon" width="24px" height="24px" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-building1"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="cases__bussines-text">Startups and Entrepreneurs</p>
+                    </li>
+                    <li class="cases__bussines-item">
+                        <div class="cases__bussines-container-icon">
+                            <div class="cases__bussines-container-icon-inner">
+                                <svg class="cases__bussines-icon" width="24px" height="24px" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-camera"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="cases__bussines-text">Cash Flow Management</p>
+                    </li>
+                    <li class="cases__bussines-item">
+                        <div class="cases__bussines-container-icon">
+                            <div class="cases__bussines-container-icon-inner">
+                                <svg class="cases__bussines-icon" width="24px" height="24px" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-chan"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="cases__bussines-text">Business Expansion</p>
+                    </li>
+                    <li class="cases__bussines-item">
+                        <div class="cases__bussines-container-icon">
+                            <div class="cases__bussines-container-icon-inner">
+                                <svg class="cases__bussines-icon" width="28px" height="28px" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-dollar"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="cases__bussines-text">Payment Solutions</p>
+                    </li>
+                </ul>
+                <div class="cases__bussines-box">
+                    <div class="cases__bussines-title">
+                        <h2 class="cases__bussines-title-text">For Business</h2>
+                        <p class="cases__bussines-title-description"> For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored financing options fuel business expansion. Whatever your financial aspirations, YourBank is committed to providing the right tools and support to achieve them</p>                              
+                    </div>
+                    <ul class="cases__bussines-percent-list">
+                        <li class="cases__bussines-percent-item">
+                            <span class="cases__bussines-percent-num">65%</span>
+                            <p class="cases__bussines-percent-text">Cash Flow Management</p>
+                        </li>
+                        <li class="cases__bussines-percent-item">
+                            <span class="cases__bussines-percent-num">70%</span>
+                            <p class="cases__bussines-percent-text">Drive Business Expansion</p>
+                        </li>
+                        <li class="cases__bussines-percent-item">
+                            <span class="cases__bussines-percent-num">45%</span>
+                            <p class="cases__bussines-percent-text">Streamline payroll processing</p>
+                        </li>
+                    </ul>
+                    <button class="cases__bussines-btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <div class="features__title">
+                <h2 class="features__title-text">Our <span class="features__title-green">Features</span></h2>
+                <p class="features__title-description">Experience a host of powerful features at YourBank, including seamless online banking, secure transactions, and personalized financial insights, all designed to enhance your banking experience</p>                              
+            </div>
+            <div class="features__tools">
+                <div class="features__tools-btns">
+                    <button class="features__tools-btn current">
+                        Online Banking
+                    </button>
+                    <button class="features__tools-btn">
+                        Financial Tools
+                    </button>
+                    <button class="features__tools-btn">
+                        Customer Support
+                    </button>
+                </div>
+                <ul class="features__list">
+                    <li class="features__item">
+                        <div class="features__item-title">
+                            <h3 class="features__item-text">24/7 Account Access</h3>
+                            <svg class="features__item-icon" width="24px" height="24px" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-arrow-top"></use>
+                            </svg>
+                        </div>
+                        <p class="features__item-description">Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform. Check balances, transfer funds, and pay bills with ease.</p>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__item-title">
+                            <h3 class="features__item-text">Mobile Banking App</h3>
+                            <svg class="features__item-icon" width="24px" height="24px" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-arrow-top"></use>
+                            </svg>
+                        </div>
+                        <p class="features__item-description">Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your accounts, deposit checks, and make payments from your smartphone or tablet.</p>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__item-title">
+                            <h3 class="features__item-text">Secure Transactions</h3>
+                            <svg class="features__item-icon" width="24px" height="24px" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-arrow-top"></use>
+                            </svg>
+                        </div>
+                        <p class="features__item-description">Rest assured knowing that your transactions are protected by industry-leading security measures. We employ encryption and multi-factor authentication to safeguard your financial information.</p>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__item-title">
+                            <h3 class="features__item-text">Bill Pay and Transfers</h3>
+                            <svg class="features__item-icon" width="24px" height="24px" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-arrow-top"></use>
+                            </svg>
+                        </div>
+                        <p class="features__item-description">Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make one-time transfers between your accounts with just a few clicks.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="faq__title">
+                <h2 class="faq__title-text">
+                    <span class="faq__title-green">Frequently</span> Asked Questions </h2>
+                <p class="faq__title-description">Still you have any questions? Contact our Team via <a class="faq__title-link" href="">
+                    support@yourbank.com
+                </a></p>                              
+            </div>
+            <ul class="faq__list">
+                <li class="faq__item">
+                    <h3 class="faq__item-text">
+                        How do I open an account with YourBank?
+                    </h3>
+                    <p class="faq__item-description">
+                        Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account" button. Follow the prompts, provide the required information, and complete the application process. If you have any questions or need assistance, our customer support team is available to help.
+                    </p>
+                </li>
+                <li class="faq__item">
+                    <h3 class="faq__item-text">
+                        What documents do I need to provide to apply for a loan?
+                    </h3>
+                    <p class="faq__item-description">
+                        The documents required for a loan application may vary depending on the type of loan you are applying for. Generally, you will need to provide identification documents (such as a passport or driver's license), proof of income (such as pay stubs or tax returns), and information about the collateral (if applicable). Our loan officers will guide you through the specific requirements during the application process.
+                    </p>
+                </li>
+                <li class="faq__item">
+                    <h3 class="faq__item-text">
+                        How can I access my accounts online?
+                    </h3>
+                    <p class="faq__item-description">
+                        Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you haven't registered for online banking, click on the "Enroll Now" button and follow the registration process. If you need assistance, our customer support team is available to guide you.
+                    </p>
+                </li>
+                <li class="faq__item">
+                    <h3 class="faq__item-text">
+                        Are my transactions and personal information secure?
+                    </h3>
+                    <p class="faq__item-description">
+                        At YourBank, we prioritize the security of your transactions and personal information. We employ industry-leading encryption and multi-factor authentication to ensure that your data is protected. Additionally, we regularly update our security measures to stay ahead of emerging threats. You can bank with confidence knowing that we have robust security systems in place.
+                    </p>
+                </li>
+                <div class="faq__item-gradient"></div>
+            </ul>
+            <button class="faq__btn">
+                Load All FAQ’s
+                <svg class="faq__icon" width="18px" height="18px" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-arrow-down"></use>
+                </svg>
+            </button>
+        </section>  
+        <section class="testimonials">
+            <div class="testimonials__title">
+                <div>
+                    <h2 class="testimonials__title-text">Our <span class="testimonials__title-text-green">Testimonials</span></h2>
+                    <p class="testimonials__title-description">Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey</p>
+                </div>
+                <div class="testimonials__title-btns">
+                    <button class="testimonials__title-btn-individuals">For Individuals</button>
+                    <button class="testimonials__title-btn-businesses">For Businesses</button>
+                </div> 
+            </div>
+            <div class="testimonials__feedback">
+                <button class="testimonials__feedback-btn-prev1">
+                    <svg class="testimonials__feedback-btn-icon" width="28px" height="28px" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-prev"></use>
+                    </svg>
+                </button>
+                <ul class="testimonials__feedback-list">
+                    <li class="testimonials__feedback-card">
+                        <div class="testimonials__feedback-img">
+                            <svg height="1" width="121">
+                                <line x1="0" y1="0" x2="300" y2="0" style="stroke:#262626;stroke-width:1" />
+                            </svg>
+                            <img class="testimonials__feedback-icon" src="./images/strokes.svg" alt="">
+                            <svg height="1" width="121">
+                                <line x1="0" y1="0" x2="300" y2="0" style="stroke:#262626;stroke-width:1" />
+                            </svg>
+                        </div>
+                        <p class="testimonials__feedback-text">YourBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.</p>
+                        <p class="testimonials__feedback-client">Sara T</p>
+                        <div class="testimonials__feedback-card-fadeout-left"></div>
+                        <div class="testimonials__feedback-card-fadeout-right"></div>
+                    </li>
+                    <li class="testimonials__feedback-card">
+                        <div class="testimonials__feedback-img">
+                            <svg height="1" width="121">
+                                <line x1="0" y1="0" x2="300" y2="0" style="stroke:#262626;stroke-width:1" />
+                            </svg>
+                            <img class="testimonials__feedback-icon" src="./images/strokes.svg" alt="">
+                            <svg height="1" width="121">
+                                <line x1="0" y1="0" x2="300" y2="0" style="stroke:#262626;stroke-width:1" />
+                            </svg>
+                        </div>
+                        <p class="testimonials__feedback-text">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                        <p class="testimonials__feedback-client">John D</p>
+                        <div class="testimonials__feedback-card-fadeout-left"></div>
+                        <div class="testimonials__feedback-card-fadeout-right"></div>
+                    </li>
+                    <li class="testimonials__feedback-card">
+                        <div class="testimonials__feedback-img">
+                            <svg height="1" width="121">
+                                <line x1="0" y1="0" x2="300" y2="0" style="stroke:#262626;stroke-width:1" />
+                            </svg>
+                            <img class="testimonials__feedback-icon" src="./images/strokes.svg" alt="">
+                            <svg height="1" width="121">
+                                <line x1="0" y1="0" x2="300" y2="0" style="stroke:#262626;stroke-width:1" />
+                            </svg>
+                        </div>
+                        <p class="testimonials__feedback-text">I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.</p>
+                        <p class="testimonials__feedback-client">Emily G</p>
+                        <div class="testimonials__feedback-card-fadeout-left"></div>
+                        <div class="testimonials__feedback-card-fadeout-right"></div>
+                    </li>
+                </ul>
+                <div class="testimonials__feedback-btns">
+                    <button class="testimonials__feedback-btn-prev">
+                        <svg class="testimonials__feedback-btn-icon" width="28px" height="28px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-prev"></use>
+                        </svg>
+                    </button>
+                    <button class="testimonials__feedback-btn-next">
+                        <svg class="testimonials__feedback-btn-icon" width="28px" height="28px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-next"></use>
+                        </svg>
+                    </button>
+                </div>
+                <button class="testimonials__feedback-btn-next1">
+                    <svg class="testimonials__feedback-btn-icon" width="28px" height="28px" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-next"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="cta__border">
+                <div class="cta__container">
+                    <div class="cta__title">
+                        <h2 class="cta__title-text">Start your financial journey with <span class="cta__title-green">YourBank today!</span></h2>
+                        <p class="cta__title-description">Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus pellentesque elit. Pellentesque eget ut imperdiet nulla penatibus. Nascetur viverra arcu sed amet cursus purus.</p>                              
+                    </div>
+                    <button class="cta__btn">Open Account</button>
+                </div>
             </div>
         </section>
     </main>
@@ -309,11 +597,6 @@
             </li>
         </ul>
         <div class="footer__end">
-            <p class="footer__end-rights">YourBank All Rights Reserved</p>
-            <div class="footer__end-box">
-                <a class="footer__end-link" href="">Privacy Policy</a>
-                <a class="footer__end-link" href="">Terms of Service</a>
-            </div>
             <div class="footer__socials">
                 <button class="footer__socials-btn">
                     <svg class="footer__socials-icon" width="20px" height="20px" aria-hidden="true">
@@ -330,6 +613,11 @@
                         <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                 </button>
+            </div>
+            <p class="footer__end-rights">YourBank All Rights Reserved</p>
+            <div class="footer__end-box">
+                <a class="footer__end-link" href="">Privacy Policy</a>
+                <a class="footer__end-link" href="">Terms of Service</a>
             </div>
         </div>
     </footer>
